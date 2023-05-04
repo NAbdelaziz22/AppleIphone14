@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title> Apple Iphone 14</title>
+        <link rel="stylesheet" href="style.css"> 
+        <!-- connection between html and css -->
+    </head>
+
+    <body>
+        
+        <div class="main">
+            <!-- 3amlna class main we han7ot feh logo we shewayt buttons -->
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.png">
+                    <!-- hena 7atena el apple logo -->
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <!-- hena 3amlna unorderd list(ul) we 7atena gowaha list (li) we hatena el buttons bta3tna -->
+                        <li> <a href="#">Home</a></li>
+                        <li> <a href="#">Phone</a></li>
+                        <li> <a href="#">Accessories</a></li>
+                        <li> <a href="#">Cart</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+            <!-- han3ml class gded esmo information we han7ot feh el sowar we shewayt specs -->
+            <div class="information">
+                <div class="overlay"></div>
+                <img src="images/mobile.png" class="mobile">
+                <div id="circle">
+                    <!-- 3amlna section gowa el information esmo circle we howa hykon dayra kbera we bn7ot gowaha el specs we bt rotate b3ana we hanrbotha be js. -->
+                    <div class=" feature one">
+                        <img src="images/camera.png">
+                        <div>
+                            <h1>Camera</h1>
+                            <p>12MP Main: 26 mm</p>
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <img src="images/processor.png">
+                        <div>
+                            <h1>Procesor</h1>
+                            <p>A15 Bionic chip.</p>
+                        </div>
+                    </div>
+                    <div class="feature three">
+                        <img src="images/display.png">
+                        <div>
+                            <h1>Display</h1>
+                            <p>Super Retina XDR display.</p>
+                        </div>
+                    </div>
+                    <div class="feature four">
+                        <img src="images/battery.png">
+                        <div>
+                            <h1>Battery</h1>
+                            <p>iPhone battery capacity 4,325mAh.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <!-- hena 7atena el arrows we 5alenahom buttons 3shan y7arko el specs -->
+                <img src="images/arrow.png" id="upBtn" width="100" 
+                height="100">
+                <!-- edena kol wa7da id (ely howa upBtn we downBtn) 3shan n3rf nenady 3alehom b3d kda fel css aw fl script -->
+                <h3>Features</h3>
+                <img src="images/arrow1.png" id="downBtn" width="100" 
+                height="100" >
+            </div>
+        </div>
+
+        <script>
+            // var y3ny variable
+            // 3arfna el circle we buttons lel script 3shan ykon shayfhom
+            var circle = document.getElementById("circle");
+            var upBtn = document.getElementById("upBtn");
+            var downBtn = document.getElementById("downBtn");
+            //3amlna variable we samenah rotatevalue 3shan n3rf n5ly el specs tlf
+            var rotateValue = circle.style.transform;
+            var rotateSum;
+            // we 3amlna rotate sum ely hyb2a feha el rotate value + darget el rotate
+            upBtn.onclick = function()
+            {
+                rotateSum = rotateValue + "rotate(-90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+                //hena b3d ma tl3na el rotatesum han7oto gowa el rotate value.
+            }
+
+            downBtn.onclick = function()
+            {
+                rotateSum = rotateValue + "rotate(90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            }
+
+        </script>
+    </body>
+</html>

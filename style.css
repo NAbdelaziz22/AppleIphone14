@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #9c27b0, #8ecdff);
+    /* hena e7na zabtna el logo wel buttons ely 3mlnaha fel html file */
+}
+nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+}
+.logo{
+    flex-basis: 20%;
+}
+.logo img{
+    width: 150;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+    /* hena da el tazbet bta3 el specs ely hanktbha 3an el mobile we maknha we kda */
+}
+#circle{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1.5s;
+/* hena edena css lel circle ely 3amlnaha we zabtna maknha we lonha we btlf fe kam sanya we tlf ad eh fl mara el wa7da */
+}
+.feature img{
+    width: 70px;
+}
+.feature{
+    position: absolute;
+    display: flex;
+    color: #fff;
+}
+.feature div{
+    margin-left: 30px;
+
+}
+.feature div p{
+    margin-top: 8px;
+}
+.one{
+    top: 450px;
+    right: 50px;
+}
+.two{
+    top: 150px;
+    left: 350px;
+    transform: rotate(-90deg);
+
+}
+.three{
+    bottom: 450px;
+    left: 50px;
+    transform: rotate(-180deg);
+}
+.four{
+    bottom: 150px;
+    right: 350px;
+    transform: rotate(-270deg);
+}
+.mobile{
+    width: 200px;
+    position:absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+    z-index: 1;
+    /* hena da tazbet makan el mobile we 7agmo */
+}
+.controls{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    /* hena zabtna makan el buttons we 7agmhom 3shan yb2a shaklhom 7lw */
+}
+.controls h3{
+    margin: 15px 0;
+    color: #fff;
+
+}
+.upBtn{
+    width: 15px;
+    cursor: pointer;
+    
+}
+.downBtn{
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid #fff;
+    border-right: 500px solid red;
+    border-bottom: 500px solid #fff;
+    border-left: 500px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* hena el overlay de heya el circle ely 3amlnaha 2asmnaha 4 7tt we edenahom colors */
+
+}
